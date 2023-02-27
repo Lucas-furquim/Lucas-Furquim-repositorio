@@ -1,0 +1,60 @@
+.sobre {
+  margin: 120px 90px 0px 90px;
+  color: white;
+}
+
+.sobre h1 {
+  text-align: center;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 43px;
+  letter-spacing: 0.02em;
+}
+
+.sobre p {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.07rem;
+  line-height: 1.4rem;
+  text-align: center;
+  color: #fefbfb;
+}
+
+.sobre p span {
+  color: #3319da;
+}
+
+.sobre p {
+  color: #b0b0b0;
+}
+
+@media (max-width: 700px) {
+  .sobre {
+    margin: 80px 90px 0px 60px;
+  }
+  .sobre h1 {
+    font-size: 1.2rem;
+  }
+  .sobre p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.05rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .sobre h1 {
+    font-size: 1rem;
+  }
+  .sobre p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    letter-spacing: 0.03rem;
+  }
+}

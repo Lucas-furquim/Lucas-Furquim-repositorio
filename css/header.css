@@ -1,0 +1,86 @@
+body {
+  background: #03010f;
+}
+
+.header {
+  padding: 15px 15px 15px 15px;
+  background-color: #100a50;
+  border-bottom: 4px solid #100a50;
+  color: white;
+}
+
+.header.ativo {
+  background-color: black;
+  border-bottom: 4px solid rgb(46, 3, 202);
+}
+
+.header-nav button {
+  font-family: "Fira Sans";
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #020724;
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  width: 120px;
+}
+
+.header-nav button::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  left: -10px;
+  top: -4px;
+  width: 20px;
+  margin-right: 4px;
+  height: 2px;
+  background-color: white;
+  box-shadow: 0px -5px white, 0px 5px white;
+  transition: transform 0.5s;
+  transform: rotate(0deg);
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav li {
+  font-size: 1.5rem;
+  line-height: 43px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  font-family: "Fira Sans";
+  font-style: normal;
+}
+
+.header-nav li:nth-child(2) {
+  font-weight: 700;
+}
+
+.header-nav li:nth-child(3) {
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .header-nav li {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-nav li:nth-child(3) {
+    display: none;
+  }
+
+  .header-nav li {
+    font-size: 1.1rem;
+  }
+}
+
+/* animação */
+
+.header-nav button.ativo::before {
+  transform: rotate(90deg);
+}

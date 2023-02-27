@@ -1,0 +1,96 @@
+.btnHome {
+  display: none;
+}
+
+.btnHome.ativo {
+  animation: escondeAparece 0.5s forwards;
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  top: 100px;
+  background-color: rgba(6, 1, 31, 0.5);
+  padding-bottom: 120px;
+  z-index: 4000;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnHome-Nav h1 {
+  color: white;
+}
+
+.btnHome-Nav ul {
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btnHome-Nav ul a {
+  color: white;
+  text-decoration: none;
+  font-family: "Fira Sans";
+  padding: 20px 250px;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: #2f13ce;
+  transition: all 0.5s;
+}
+
+.btnHome-Nav ul a:hover {
+  transition: all 0.5s;
+  background-color: #130563;
+  padding: 25px 255px;
+  color: rgb(193, 184, 241);
+}
+
+@keyframes escondeAparece {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes Esconde {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .btnHome-Nav ul a {
+    padding: 20px 200px;
+  }
+
+  .btnHome-Nav ul a:hover {
+    padding: 20px 210px;
+  }
+}
+
+@media (max-width: 580px) {
+  .btnHome-Nav ul a {
+    padding: 20px 150px;
+  }
+
+  .btnHome-Nav ul a:hover {
+    padding: 20px 160px;
+  }
+}
+
+@media (max-width: 450px) {
+  .btnHome-Nav ul a {
+    padding: 20px 100px;
+  }
+
+  .btnHome-Nav ul a:hover {
+    padding: 20px 110px;
+  }
+}
