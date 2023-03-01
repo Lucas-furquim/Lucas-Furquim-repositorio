@@ -146,3 +146,31 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* utilitario */
+
+.titulo-secundario {
+  margin-top: 200px;
+  text-align: center;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 43px;
+  letter-spacing: 0.02em;
+  color: #fefbfb;
+}
+
+@media (max-width: 700px) {
+  .titulo-secundario {
+    margin-top: 120px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .titulo-secundario {
+    margin-top: 80px;
+    font-size: 1rem;
+  }
+}

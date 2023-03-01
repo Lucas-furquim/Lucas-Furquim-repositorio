@@ -49,7 +49,7 @@
   max-width: 100%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .apresentacao-nome h1 {
     font-size: 1.2rem;
     width: 150px;
