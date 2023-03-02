@@ -1,3 +1,50 @@
+.habilidade-titulo h1 {
+  margin-bottom: 30px;
+}
+
 .habiliades-projetos {
+  margin: 0px 5px;
   color: white;
+}
+
+.habiliades-projetos ul {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 150px 150px 150px;
+  justify-content: center;
+  gap: 20px 50px;
+}
+
+.habiliades-projetos ul li {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #fefbfb;
+  background-color: blue;
+  padding: 10px 14px;
+  width: 140px;
+  height: 30px;
+
+  /* grid */
+
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  align-items: center;
+  gap: 0px 10px;
+}
+
+.habiliades-projetos ul li img {
+  width: 28px;
+  height: 25p;
+}
+
+.habiliades-projetos ul li:nth-child(2n + 1) {
+  background-color: #040c38;
+}
+
+.habiliades-projetos ul li:nth-child(2n) {
+  background-image: linear-gradient(to right, #3a24c0, #2e086c);
 }
