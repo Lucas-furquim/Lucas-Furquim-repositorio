@@ -11,5 +11,7 @@ module.exports = {
   },
   rules: {
     "no-undef": "off",
+    "no-func-assign": "off",
+    "no-unused-vars": "off",
   },
 };
