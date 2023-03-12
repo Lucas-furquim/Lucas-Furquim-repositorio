@@ -10,9 +10,11 @@
 .habiliades-projetos ul {
   display: grid;
   align-items: center;
-  grid-template-columns: 150px 150px 150px;
+  grid-template-columns: 180px 180px 180px;
   justify-content: center;
-  gap: 20px 50px;
+  justify-items: center;
+
+  gap: 50px 80px;
 }
 
 .habiliades-projetos ul li {
@@ -24,21 +26,24 @@
   letter-spacing: 0.02em;
   color: #fefbfb;
   background-color: blue;
-  padding: 14px 18px;
+  padding: 18px 25px;
   width: 140px;
   height: 30px;
 
   /* grid */
 
   display: grid;
-  grid-template-columns: 1fr 100px;
+  grid-template-columns: 1fr 150px;
   align-items: center;
   gap: 0px 10px;
 }
 
 .habiliades-projetos ul li img {
   width: 28px;
-  height: 25p;
+}
+
+.habiliades-projetos ul li p {
+  font-size: 1.5rem;
 }
 
 .habiliades-projetos ul li:nth-child(2n + 1) {
@@ -49,9 +54,15 @@
   background-image: linear-gradient(to right, #3a24c0, #2e086c);
 }
 
+@media (max-width: 800px) {
+  .habiliades-projetos ul {
+    gap: 25px 40px;
+  }
+}
+
 @media (max-width: 700px) {
   .habiliades-projetos ul {
-    gap: 15px 30px;
+    gap: 10px 20px;
   }
 
   .habiliades-projetos ul li {
@@ -63,14 +74,14 @@
   }
 
   .habiliades-projetos ul li p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .habiliades-projetos ul {
-    gap: 20px 50px;
-    grid-template-columns: 150px 150px;
+    gap: 30px 20px;
+    grid-template-columns: 200px 200px;
   }
 
   .habiliades-projetos ul li:nth-child(1n) {
@@ -87,12 +98,21 @@
 
 @media (max-width: 430px) {
   .habiliades-projetos ul {
-    grid-template-columns: 150px;
+    gap: 20px 20px;
+    grid-template-columns: 150px 150px;
   }
-  .habiliades-projetos ul li:nth-child(1n) {
-    background-image: linear-gradient(to right, #040c38, #040c38);
+  .habiliades-projetos ul li p {
+    font-size: 1.1rem;
   }
-  .habiliades-projetos ul li:nth-child(2n + 2) {
-    background-image: linear-gradient(to right, #3a24c0, #6200ff);
+  .habiliades-projetos ul li {
+    padding: 5px 8px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 360px) {
+  .habiliades-projetos ul {
+    gap: 20px 50px;
+    grid-template-columns: 100px 100px;
   }
 }

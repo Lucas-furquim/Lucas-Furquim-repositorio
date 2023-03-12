@@ -16,13 +16,13 @@ body {
 
 .header-nav button {
   font-family: "Fira Sans";
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 500;
   background-color: #020724;
   color: white;
   border-radius: 5px;
-  height: 40px;
-  width: 120px;
+  height: 70px;
+  width: 150px;
 }
 
 .header-nav button::before {
@@ -30,12 +30,12 @@ body {
   display: inline-block;
   position: relative;
   left: -10px;
-  top: -4px;
-  width: 20px;
+  top: -8px;
+  width: 30px;
   margin-right: 4px;
-  height: 2px;
+  height: 5px;
   background-color: white;
-  box-shadow: 0px -5px white, 0px 5px white;
+  box-shadow: 0px -10px white, 0px 10px white;
   transition: transform 0.5s;
   transform: rotate(0deg);
 }
@@ -47,7 +47,8 @@ body {
 }
 
 .header-nav li {
-  font-size: 1.5rem;
+  font-size: 2rem;
+
   line-height: 43px;
   text-align: center;
   letter-spacing: 0.02em;
@@ -63,6 +64,30 @@ body {
   font-weight: 500;
 }
 
+@media (max-width: 900px) {
+  .header-nav button {
+    font-size: 1.5rem;
+  }
+  .header-nav button::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    left: -10px;
+    top: -5px;
+    width: 25px;
+    margin-right: 4px;
+    height: 3px;
+    background-color: white;
+    box-shadow: 0px -8px white, 0px 8px white;
+    transition: transform 0.5s;
+    transform: rotate(0deg);
+  }
+
+  .header-nav li {
+    font-size: 1.7rem;
+  }
+}
+
 @media (max-width: 700px) {
   .header-nav li {
     font-size: 1.3rem;
@@ -70,8 +95,43 @@ body {
 }
 
 @media (max-width: 600px) {
+  .header-nav button {
+    height: 60px;
+    width: 120px;
+  }
+
+  .header-nav button::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    left: -10px;
+    top: -6px;
+    width: 20px;
+    margin-right: 4px;
+    height: 3px;
+    background-color: white;
+    box-shadow: 0px -8px white, 0px 8px white;
+    transition: transform 0.5s;
+    transform: rotate(0deg);
+  }
+
+  .header-nav li:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
   .header-nav li:nth-child(3) {
     display: none;
+  }
+
+  .header-nav li {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-nav li:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 700;
   }
 
   .header-nav li {

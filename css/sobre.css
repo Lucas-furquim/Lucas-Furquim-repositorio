@@ -9,9 +9,9 @@
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 2rem;
   letter-spacing: 0.07rem;
-  line-height: 1.4rem;
+  line-height: 2.5rem;
   text-align: center;
   color: #fefbfb;
 }
@@ -29,19 +29,19 @@
     margin: 0px 90px 0px 60px;
   }
   .sobre p {
-    font-size: 1rem;
-    line-height: 1.2rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
     letter-spacing: 0.05rem;
   }
 }
 
 @media (max-width: 500px) {
   .sobre h1 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .sobre p {
-    font-size: 0.8rem;
-    line-height: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     letter-spacing: 0.03rem;
   }
 }
