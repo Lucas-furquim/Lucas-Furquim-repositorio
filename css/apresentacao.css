@@ -12,7 +12,7 @@
 }
 
 .apresentacao-nome span {
-  color: #3319da;
+  color: #2708ee;
 }
 
 .apresentacao-nome h1 {
@@ -45,8 +45,19 @@
   color: #c2bfbf;
 }
 
+.apresentacao-foto p {
+  margin-top: 10px;
+}
+
 .apresentacao-foto img {
   max-width: 100%;
+  -webkit-transform: scale(1);
+  -webkit-transition: 0.5s ease-in;
+}
+
+.apresentacao-foto img:hover {
+  -webkit-transform: scale(1.09);
+  -webkit-transition: 0.5s ease-in;
 }
 
 @media (max-width: 800px) {

@@ -1,0 +1,116 @@
+.projeto-titulo {
+  margin-bottom: 30px;
+}
+
+.projetos .projetos-site {
+  display: inline-block;
+}
+
+.projetos .projetos-site img {
+  width: 300px;
+  height: 153px;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 2px solid black;
+}
+
+.projetos .projetos-site div {
+  background-color: #040b2d;
+  height: 50px;
+  border-bottom: 4px solid #1a00bc;
+}
+
+.projetos .projetos-site p {
+  background-image: linear-gradient(to right, #2539e5, #490fa8);
+  border-radius: 5px;
+  padding: 3px 6px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0px 0px 0px 15px;
+}
+
+.projetos .projeto-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projetos .projeto-conteudo a {
+  text-decoration: none;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 24px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  /* c2 */
+
+  color: #f5f2f2;
+}
+
+.projetos .projeto-conteudo img {
+  margin: 0px 15px 0px 0px;
+  width: 35px;
+}
+
+.projeto-grid {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  justify-content: center;
+  justify-items: center;
+  gap: 100px 200px;
+}
+
+@media (max-width: 900px) {
+  .projeto-grid {
+    gap: 100px 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  .projeto-grid {
+    gap: 80px 40px;
+  }
+
+  .projetos .projetos-site img {
+    width: 250px;
+    /* height: 153px; */
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 2px solid black;
+  }
+
+  .projetos .projeto-conteudo img {
+    width: 30px;
+  }
+
+  .projetos .projeto-conteudo {
+    justify-content: space-between;
+  }
+
+  .projetos .projetos-site {
+    object-fit: contain;
+    width: 250px;
+  }
+}
+
+@media (max-width: 700px) {
+  .projeto-grid {
+    gap: 100px 10px;
+  }
+}
+
+@media (max-width: 670px) {
+  .projeto-grid {
+    grid-template-columns: 250px 250px;
+    gap: 50px 30px;
+  }
+}
+
+@media (max-width: 670px) {
+  .projeto-grid {
+    grid-template-columns: 250px;
+    gap: 50px 30px;
+  }
+}

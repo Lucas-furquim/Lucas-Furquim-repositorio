@@ -44,6 +44,7 @@ export default function Habilidade() {
       const criaLi = document.createElement("li");
       const criaImg = document.createElement("img");
       criaImg.src = item.imagem;
+      criaImg.alt = item.nome.toLocaleLowerCase() + " logo";
       criaLi.appendChild(criaImg);
       criaLi.appendChild(criaP);
       criaP.innerText = item.nome;

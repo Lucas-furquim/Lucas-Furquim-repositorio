@@ -154,7 +154,7 @@ html {
 /* utilitario */
 
 .titulo-secundario {
-  margin-top: 200px;
+  margin: 200px 0px 50px 0px;
   text-align: center;
   font-family: "Fira Sans";
   font-style: normal;

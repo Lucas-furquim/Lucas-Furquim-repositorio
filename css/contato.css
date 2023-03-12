@@ -1,0 +1,104 @@
+.contato {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+
+.contatos-link {
+  display: grid;
+  justify-items: center;
+}
+
+.contatos-link h2 {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 29px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+
+.contatos-link p {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+
+  /* c8 */
+
+  color: #9c9c9c;
+}
+.contato-desc {
+  display: block;
+  font-family: "Fira Sans";
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  /* width: 700px; */
+  letter-spacing: 0.01em;
+  padding: 15px 20px;
+  /* c2 */
+
+  color: #f5f2f2;
+}
+
+.contato-direito {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  margin-top: 100px;
+  padding: 15px 10px;
+
+  /* c7 */
+
+  color: #b0b0b0;
+}
+
+@media (max-width: 850px) {
+  .contato {
+    display: grid;
+    grid-template-columns: 200px 200px;
+  }
+
+  .contato-desc {
+    font-size: 1.5rem;
+  }
+
+  .contato-direito {
+    font-size: 0.8rem;
+  }
+
+  .contatos-link h2 {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 29px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 500px) {
+  .contato {
+    grid-template-columns: 200px;
+  }
+  .contato-desc {
+    font-size: 1.2rem;
+  }
+}
