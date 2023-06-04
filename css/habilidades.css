@@ -22,13 +22,13 @@
   font-style: normal;
   font-weight: 700;
   font-size: 1.1rem;
-  line-height: 24px;
+  line-height: 30px;
   letter-spacing: 0.02em;
   color: #fefbfb;
   background-color: blue;
   padding: 18px 25px;
-  width: 140px;
-  height: 30px;
+  width: auto;
+  height: 45px;
 
   /* grid */
 

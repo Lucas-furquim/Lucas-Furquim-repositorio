@@ -19,7 +19,7 @@ export default function Habilidade() {
       imagem: "img/react-Vector.png",
     },
     {
-      nome: "Wordpress",
+      nome: "Wordpress Como CMS",
       imagem: "img/wp-vector.svg",
     },
     {

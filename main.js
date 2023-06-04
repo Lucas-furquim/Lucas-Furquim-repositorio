@@ -1,1 +1,156 @@
-(()=>{"use strict";function e(t){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(t)}function t(t,o){for(var n=0;n<o.length;n++){var i=o[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(t,(r=i.key,a=void 0,a=function(t,o){if("object"!==e(t)||null===t)return t;var n=t[Symbol.toPrimitive];if(void 0!==n){var i=n.call(t,"string");if("object"!==e(i))return i;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(t)}(r),"symbol"===e(a)?a:String(a)),i)}var r,a}var o,n;new(function(){function e(t,o,n,i){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.cabecalho=document.querySelector(n),this.btn=document.querySelector(t),this.home=document.querySelector(o),this.navBtn=document.querySelector(i)}var o,n;return o=e,(n=[{key:"addEvent",value:function(){var e=this;this.btn.addEventListener("click",(function(){e.home.classList.toggle("ativo"),e.cabecalho.classList.toggle("ativo"),e.home.classList.contains("ativo")&&e.VerElemento()}))}},{key:"VerElemento",value:function(){var e=this;this.navBtn.addEventListener("click",(function(){e.home.classList.remove("ativo"),e.cabecalho.classList.remove("ativo")}))}},{key:"init",value:function(){this.addEvent()}}])&&t(o.prototype,n),Object.defineProperty(o,"prototype",{writable:!1}),e}())(".header-nav button",".btnHome ",".header",".btnHome-Nav ul").init(),o=document.querySelector(".habiliades-projetos ul"),n=[],[{nome:"Javascript",imagem:"img/js-vector.svg"},{nome:"HTML5",imagem:"img/html-vector.svg"},{nome:"CSS3",imagem:"img/css-vector.svg"},{nome:"React.js",imagem:"img/react-Vector.png"},{nome:"Wordpress",imagem:"img/wp-vector.svg"},{nome:"Ui Desing",imagem:"img/ui-vector.svg"},{nome:"Figma",imagem:"img/figma-vector.svg"},{nome:"PHP",imagem:"img/php-vector.svg"}].map((function(e){var t=document.createElement("p"),o=document.createElement("li"),i=document.createElement("img");return i.src=e.imagem,i.alt=e.nome.toLocaleLowerCase()+" logo",o.appendChild(i),o.appendChild(t),t.innerText=e.nome,n.push(o)})),n.forEach((function(e){var t;t=e,o.appendChild(t)}))})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./js/modulos/Habilidade.js":
+/*!**********************************!*\
+  !*** ./js/modulos/Habilidade.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Habilidade)\n/* harmony export */ });\nfunction Habilidade() {\n  var ulTela = document.querySelector(\".habiliades-projetos ul\");\n  var hab = [{\n    nome: \"Javascript\",\n    imagem: \"img/js-vector.svg\"\n  }, {\n    nome: \"HTML5\",\n    imagem: \"img/html-vector.svg\"\n  }, {\n    nome: \"CSS3\",\n    imagem: \"img/css-vector.svg\"\n  }, {\n    nome: \"React.js\",\n    imagem: \"img/react-Vector.png\"\n  }, {\n    nome: \"Wordpress Como CMS\",\n    imagem: \"img/wp-vector.svg\"\n  }, {\n    nome: \"Ui Desing\",\n    imagem: \"img/ui-vector.svg\"\n  }, {\n    nome: \"Figma\",\n    imagem: \"img/figma-vector.svg\"\n  }, {\n    nome: \"PHP\",\n    imagem: \"img/php-vector.svg\"\n  }];\n  var elementos = [];\n  function addElemento() {\n    hab.map(function (item) {\n      var criaP = document.createElement(\"p\");\n      var criaLi = document.createElement(\"li\");\n      var criaImg = document.createElement(\"img\");\n      criaImg.src = item.imagem;\n      criaImg.alt = item.nome.toLocaleLowerCase() + \" logo\";\n      criaLi.appendChild(criaImg);\n      criaLi.appendChild(criaP);\n      criaP.innerText = item.nome;\n      return elementos.push(criaLi);\n    });\n  }\n  function passaLiTela() {\n    elementos.forEach(function (item) {\n      addLiTela(item);\n    });\n  }\n  function addLiTela(p) {\n    ulTela.appendChild(p);\n  }\n  addElemento();\n  passaLiTela();\n  // console.log(elementos);\n}\n\n//# sourceURL=webpack://portifiolio-novo/./js/modulos/Habilidade.js?");
+
+/***/ }),
+
+/***/ "./js/modulos/btnHome.js":
+/*!*******************************!*\
+  !*** ./js/modulos/btnHome.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ BtnHome)\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ \"./node_modules/@babel/runtime/helpers/esm/classCallCheck.js\");\n/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ \"./node_modules/@babel/runtime/helpers/esm/createClass.js\");\n\n\nvar BtnHome = /*#__PURE__*/function () {\n  function BtnHome(btn, ativar, cabecalho, navBtn) {\n    (0,_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(this, BtnHome);\n    this.cabecalho = document.querySelector(cabecalho);\n    this.btn = document.querySelector(btn);\n    this.home = document.querySelector(ativar);\n    this.navBtn = document.querySelector(navBtn);\n  }\n  (0,_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(BtnHome, [{\n    key: \"addEvent\",\n    value: function addEvent() {\n      var _this = this;\n      this.btn.addEventListener(\"click\", function () {\n        _this.home.classList.toggle(\"ativo\");\n        _this.cabecalho.classList.toggle(\"ativo\");\n        var verAtivo = _this.home.classList.contains(\"ativo\");\n        if (verAtivo) {\n          _this.VerElemento();\n        }\n      });\n    }\n  }, {\n    key: \"VerElemento\",\n    value: function VerElemento() {\n      var _this2 = this;\n      this.navBtn.addEventListener(\"click\", function () {\n        _this2.home.classList.remove(\"ativo\");\n        _this2.cabecalho.classList.remove(\"ativo\");\n      });\n    }\n  }, {\n    key: \"init\",\n    value: function init() {\n      this.addEvent();\n    }\n  }]);\n  return BtnHome;\n}();\n\n\n//# sourceURL=webpack://portifiolio-novo/./js/modulos/btnHome.js?");
+
+/***/ }),
+
+/***/ "./js/script.js":
+/*!**********************!*\
+  !*** ./js/script.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modulos_btnHome_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modulos/btnHome.js */ \"./js/modulos/btnHome.js\");\n/* harmony import */ var _modulos_Habilidade_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modulos/Habilidade.js */ \"./js/modulos/Habilidade.js\");\n\n\nvar btnHome = new _modulos_btnHome_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](\".header-nav button\", \".btnHome \", \".header\", \".btnHome-Nav ul\");\nbtnHome.init();\n(0,_modulos_Habilidade_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack://portifiolio-novo/./js/script.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _classCallCheck)\n/* harmony export */ });\nfunction _classCallCheck(instance, Constructor) {\n  if (!(instance instanceof Constructor)) {\n    throw new TypeError(\"Cannot call a class as a function\");\n  }\n}\n\n//# sourceURL=webpack://portifiolio-novo/./node_modules/@babel/runtime/helpers/esm/classCallCheck.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/createClass.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/createClass.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _createClass)\n/* harmony export */ });\n/* harmony import */ var _toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./toPropertyKey.js */ \"./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js\");\n\nfunction _defineProperties(target, props) {\n  for (var i = 0; i < props.length; i++) {\n    var descriptor = props[i];\n    descriptor.enumerable = descriptor.enumerable || false;\n    descriptor.configurable = true;\n    if (\"value\" in descriptor) descriptor.writable = true;\n    Object.defineProperty(target, (0,_toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(descriptor.key), descriptor);\n  }\n}\nfunction _createClass(Constructor, protoProps, staticProps) {\n  if (protoProps) _defineProperties(Constructor.prototype, protoProps);\n  if (staticProps) _defineProperties(Constructor, staticProps);\n  Object.defineProperty(Constructor, \"prototype\", {\n    writable: false\n  });\n  return Constructor;\n}\n\n//# sourceURL=webpack://portifiolio-novo/./node_modules/@babel/runtime/helpers/esm/createClass.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/toPrimitive.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/toPrimitive.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _toPrimitive)\n/* harmony export */ });\n/* harmony import */ var _typeof_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./typeof.js */ \"./node_modules/@babel/runtime/helpers/esm/typeof.js\");\n\nfunction _toPrimitive(input, hint) {\n  if ((0,_typeof_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(input) !== \"object\" || input === null) return input;\n  var prim = input[Symbol.toPrimitive];\n  if (prim !== undefined) {\n    var res = prim.call(input, hint || \"default\");\n    if ((0,_typeof_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(res) !== \"object\") return res;\n    throw new TypeError(\"@@toPrimitive must return a primitive value.\");\n  }\n  return (hint === \"string\" ? String : Number)(input);\n}\n\n//# sourceURL=webpack://portifiolio-novo/./node_modules/@babel/runtime/helpers/esm/toPrimitive.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _toPropertyKey)\n/* harmony export */ });\n/* harmony import */ var _typeof_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./typeof.js */ \"./node_modules/@babel/runtime/helpers/esm/typeof.js\");\n/* harmony import */ var _toPrimitive_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./toPrimitive.js */ \"./node_modules/@babel/runtime/helpers/esm/toPrimitive.js\");\n\n\nfunction _toPropertyKey(arg) {\n  var key = (0,_toPrimitive_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(arg, \"string\");\n  return (0,_typeof_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(key) === \"symbol\" ? key : String(key);\n}\n\n//# sourceURL=webpack://portifiolio-novo/./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/typeof.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/typeof.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _typeof)\n/* harmony export */ });\nfunction _typeof(obj) {\n  \"@babel/helpers - typeof\";\n\n  return _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (obj) {\n    return typeof obj;\n  } : function (obj) {\n    return obj && \"function\" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj;\n  }, _typeof(obj);\n}\n\n//# sourceURL=webpack://portifiolio-novo/./node_modules/@babel/runtime/helpers/esm/typeof.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./js/script.js");
+/******/ 	
+/******/ })()
+;
