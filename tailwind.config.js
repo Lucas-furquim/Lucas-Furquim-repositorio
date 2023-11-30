@@ -9,10 +9,13 @@ module.exports = {
         terceiro: "#332D9C",
         quarto: "#332B96",
         quinto: "#9A9A9A",
+        sexto: "#070D18",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
+        arial: ["Arial", "sans-serif"],
+        inter: ["Inter"],
       },
     },
   },
