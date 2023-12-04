@@ -10,6 +10,7 @@ module.exports = {
         quarto: "#332B96",
         quinto: "#9A9A9A",
         sexto: "#070D18",
+        html: "#E34F26",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
