@@ -18,6 +18,22 @@
   z-index: 1;
 }
 
+.link-a-btn {
+  position: relative;
+  padding: 20px 30px;
+  display: block;
+  text-decoration: none;
+  width: 230px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.link-a-btn span {
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
 .link-a .liquid {
   position: absolute;
   top: -80px;

@@ -11,6 +11,7 @@ module.exports = {
         quinto: "#9A9A9A",
         sexto: "#070D18",
         html: "#E34F26",
+        borderb: "#121F3A",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
