@@ -8,8 +8,8 @@
   <title>Lucas Portifolio</title>
 </head>
 
-<body class="bg-pricipal max-w-6xl mx-auto">
-  <header class="text-white flex place-content-between mt-2">
+<body class="bg-pricipal ">
+  <header class="text-white flex place-content-between mt-2 max-w-6xl mx-auto">
     <div class="flex gap-2">
       <img class="w-10" src="Img-portifolio/Logo.svg" alt="">
       <h1 class="text-2xl w-40 font-bold">Lucas</h1>
@@ -24,7 +24,7 @@
     </nav>
   </header>
 
-  <main class="mt-32">
+  <main class="mt-32 max-w-6xl mx-auto">
     <div class="flex place-content-between items-center ">
       <div class="text-white w-auto">
         <p class=' text-xl'><img class="inline h-8 mr-2" src="Img-portifolio/mao.png" alt=""> Olá menu nome é</p>
@@ -150,36 +150,40 @@
       </div>
     </div>
 
-    <footer class="text-white">
+    <footer class="text-white grid grid-cols-3 gap-x-10 mx-auto mt-36">
       <div>
-        <h2>Vamos Conversar</h2>
-        <p>Entre em contato e marcamos uma conversa para inicar um novo projeto</p>
+        <h2 class="text-4xl font-bold font-poppins mb-7">Vamos Conversar</h2>
+        <p class="font-arial text-base mb-7">Entre em contato e marcamos uma conversa para inicar um novo projeto</p>
         <a class="link-a-btn font-semibold text-sm tracking-widest bg-quarto" href="./projetos.html">
-          <span>Entre em Contato<img class="inline ml-3" src="Img-portifolio/arrow-right-thin.svg" alt=""></span>
+          <span>Iniciar Projeto<img class="inline ml-3" src="Img-portifolio/arrow-right-thin.svg" alt=""></span>
         </a>
       </div>
 
-      <div>
-        <h4>Pagina</h4>
-        <p>Contato</p>
-        <P>Projetos</P>
+      <div class="text-center">
+        <h4 class="text-xl font-bold font-poppins mb-5">Pagina</h4>
+        <p class="text-gray-400 text-lg font-arial mb-2">Contato</p>
+        <P class="text-gray-400 text-lg font-arial ">Projetos</P>
       </div>
 
       <div>
-        <h4>Contato</h4>
+        <h4 class="text-xl font-bold font-poppins mb-5">Contato</h4>
 
         <div>
-          <h5>Email</h5>
-          <p><a href="mailto:lucasviniciusfurquim@gmail.com">lucasviniciusfurquim@gmail.com</a></p>
+          <h5 class="text-gray-400 text-base font-arial mb-2">Email</h5>
+          <p class="mb-5"><a class="text-lg font-arial" href="mailto:lucasviniciusfurquim@gmail.com">lucasviniciusfurquim@gmail.com</a></p>
         </div>
 
         <div>
-          <h5>Tel</h5>
-          <p><a href="tel:+5515997679644">+55 (15)997679644</a></p>
+          <h5 class="text-gray-400 text-base font-arial mb-2">Tel</h5>
+          <p><a class="text-lg font-arial" href="tel:+5515997679644">+55 (15)997679644</a></p>
         </div>
       </div>
     </footer>
+
   </main>
+  <div class="text-white bg-black mt-12 pb-2 pt-4 pl-4">
+    <p class="max-w-6xl mx-auto text-base font-arial mb-2">Feito por Lucas Furquim &copy;</p>
+  </div>
   <script type="module" src="script.js"></script>
 </body>
 
