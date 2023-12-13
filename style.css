@@ -354,3 +354,45 @@
     transform: translate(0px, -0px);
   }
 }
+
+/* efeito digitação */
+
+.texto-animado span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-left: 2px solid white;
+  opacity: 1;
+  animation: cursorWrite 0.7s infinite;
+  width: 100%;
+  right: 2px;
+  background-color: #01030e;
+}
+
+.texto-animado span {
+  position: relative;
+}
+
+.texto-animado span::before {
+  content: "";
+  animation: writer 5s infinite;
+  padding-right: 10px;
+}
+
+@keyframes cursorWrite {
+  0% {
+    /* border-left: 2px solid #01030e; */
+    opacity: 0;
+  }
+}
+
+@keyframes writer {
+  0%,
+  50% {
+    content: "Desenvolvedor Front-end";
+  }
+  51%,
+  100% {
+    content: "Sorocaba/SP";
+  }
+}
