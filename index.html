@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html style="scroll-behavior: smooth;" lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -8,18 +8,18 @@
   <title>Lucas Portifolio</title>
 </head>
 
-<body class="bg-pricipal ">
-  <header class="text-white flex place-content-between mt-2 max-w-6xl mx-auto fixed">
+<body class="bg-pricipal">
+  <header style="width: 72.5rem; margin: 0px 300px;" class="shadow-xl shadow-pricipal text-white flex fixed mx-auto justify-between -top-1 pt-3 bg-pricipal z-20">
     <div class="flex gap-2">
       <img class="w-10" src="Img-portifolio/Logo.svg" alt="">
       <h1 class="text-2xl w-40 font-bold">Lucas</h1>
     </div>
     <nav>
-      <ul class="flex space-x-4 text-xl font-poppins">
-        <li>Sobre</li>
-        <li>Habilidades</li>
-        <li>Projetos</li>
-        <li>Contato</li>
+      <ul class="flex space-x-4 text-xl font-poppins gap-3">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="./contato.html">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -40,6 +40,9 @@
       </div>
     </div>
 
+
+    <div id="sobre" class="w-full h-3 my-20">
+    </div>
     <div class="bg-sexto flex items-center gap-9 h-96">
       <div class="flex-shrink-0 pl-20">
         <img class="w-96" src="Img-portifolio/Arvore.svg" alt="">
@@ -64,8 +67,8 @@
       </div>
     </div>
 
-    <div class="text-white ">
-      <h2 class="text-center text-4xl font-bold font-poppins mb-28 mt-52">Meus Conhecimentos e habilidades</h2>
+    <div id="habilidades" class="text-white ">
+      <h2 class="text-center text-4xl font-bold font-poppins mb-28 mt-20 pt-20">Meus Conhecimentos e habilidades</h2>
 
       <div class="grid grid-cols-3 justify-items-center gap-y-8">
 
@@ -116,15 +119,15 @@
       </div>
     </div>
 
-    <div class="pb-16 border-b border-borderb">
-      <h2 class="text-white text-center text-4xl font-bold font-poppins mb-28 mt-52 mx-auto">Conheça meus projetos e veja um pouco do meu conhecimento e o trabalho que faço</h2>
+    <div id="projetos" class="pb-16 border-b border-borderb">
+      <h2 class="text-white text-center text-4xl font-bold font-poppins mb-28 mt-20 pt-20 mx-auto">Conheça meus projetos e veja um pouco do meu conhecimento e o trabalho que faço</h2>
 
       <div class="flex justify-center">
         <img src="Img-portifolio/site-hoteis.png" alt="">
         <img src="Img-portifolio/bike-img.png" alt="">
       </div>
 
-      <div class="flex justify-around">
+      <div id="projetos" class="flex justify-around">
         <p class="font-arial max-w-xs text-quinto">Explore e descubra diversos projetos e soluções ja desenvolvidas.</p>
         <a class="link-a font-semibold text-sm tracking-widest bg-quarto " href="./projetos.html">
           <span>Ver Projetos <img class="inline" src="Img-portifolio/arrow-right-thin.svg" alt=""></span>
@@ -156,7 +159,7 @@
       <div>
         <h2 class="text-4xl font-bold font-poppins mb-7">Vamos Conversar</h2>
         <p class="font-arial text-base mb-7">Entre em contato e marcamos uma conversa para inicar um novo projeto</p>
-        <a class="link-a-btn font-semibold text-sm tracking-widest bg-quarto" href="./projetos.html">
+        <a class="link-a-btn font-semibold text-sm tracking-widest bg-quarto" href="./contato.html">
           <span>Iniciar Projeto<img class="inline ml-3" src="Img-portifolio/arrow-right-thin.svg" alt=""></span>
         </a>
       </div>

@@ -434,3 +434,14 @@
     content: "Desenvolvedor Front-end";
   }
 }
+
+/* hover nav  */
+
+nav li {
+  transition: all 0.5s;
+}
+
+nav li:hover {
+  color: #0f6bf5;
+  transform: scale(1.2);
+}

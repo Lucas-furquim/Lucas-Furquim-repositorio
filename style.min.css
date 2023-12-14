@@ -542,6 +542,10 @@ video {
   position: relative;
 }
 
+.-top-1 {
+  top: -0.25rem;
+}
+
 .-top-12 {
   top: -3rem;
 }
@@ -562,6 +566,10 @@ video {
   z-index: 10;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -570,6 +578,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .mb-10 {
@@ -620,8 +633,8 @@ video {
   margin-top: 3.5rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mt-3 {
@@ -656,6 +669,10 @@ video {
   display: grid;
 }
 
+.h-3 {
+  height: 0.75rem;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -678,6 +695,10 @@ video {
 
 .w-auto {
   width: auto;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-4xl {
@@ -734,6 +755,10 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-9 {
@@ -825,6 +850,14 @@ video {
 
 .pr-20 {
   padding-right: 5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .pt-4 {
@@ -926,6 +959,17 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-pricipal {
+  --tw-shadow-color: #01030E;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .link-a {
@@ -1386,6 +1430,17 @@ video {
   100% {
     content: "Desenvolvedor Front-end";
   }
+}
+
+/* hover nav  */
+
+nav li {
+  transition: all 0.5s;
+}
+
+nav li:hover {
+  color: #0f6bf5;
+  transform: scale(1.2);
 }
 
 .hover\:text-terceiro:hover {
