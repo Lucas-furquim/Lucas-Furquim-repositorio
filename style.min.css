@@ -534,6 +534,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .relative {
   position: relative;
 }
@@ -1306,11 +1310,39 @@ video {
   position: absolute;
   height: 100%;
   border-left: 2px solid white;
-  opacity: 1;
-  animation: cursorWrite 0.7s infinite;
+  animation:
+    cursorWrite 0.7s infinite,
+    digitar 20s steps(15) infinite;
   width: 100%;
   right: 2px;
   background-color: #01030e;
+}
+
+@keyframes digitar {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0px;
+  }
+
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: 100%;
+  }
 }
 
 .texto-animado span {
@@ -1319,26 +1351,40 @@ video {
 
 .texto-animado span::before {
   content: "";
-  animation: writer 5s infinite;
+  animation: writer 20s infinite;
   padding-right: 10px;
 }
 
 @keyframes cursorWrite {
   0% {
-    /* border-left: 2px solid #01030e; */
-    opacity: 0;
+    border-left: 2px solid #01030e;
   }
 }
 
 @keyframes writer {
   0%,
-  50% {
+  20% {
     content: "Desenvolvedor Front-end";
   }
 
-  51%,
-  100% {
+  21%,
+  40% {
     content: "Sorocaba/SP";
+  }
+
+  41%,
+  60% {
+    content: "Desenvolvedor Front-end";
+  }
+
+  61%,
+  80% {
+    content: "Sorocaba/SP";
+  }
+
+  81%,
+  100% {
+    content: "Desenvolvedor Front-end";
   }
 }
 
