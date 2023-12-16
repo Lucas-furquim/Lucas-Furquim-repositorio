@@ -445,3 +445,14 @@ nav li:hover {
   color: #0f6bf5;
   transform: scale(1.2);
 }
+
+/* papel de contato  */
+
+.papel-de-contato {
+  z-index: -2;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background-image: url("./Img-portifolio/papel-de-contato.png");
+}
