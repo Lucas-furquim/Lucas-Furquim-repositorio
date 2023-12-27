@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.grid-projeto {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 56px;
+}
 .link-a {
   position: relative;
   padding: 20px 30px;
