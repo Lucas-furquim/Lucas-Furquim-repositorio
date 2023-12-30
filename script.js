@@ -1,4 +1,7 @@
-import Arrow from "./js/hover-arrow-right.js";
+import Github from "./js/hover-contact.js";
+import Lin from "./js/hover-lin.js";
 
-const arrow = new Arrow("jsArrow");
-arrow.init();
+const github = new Github("jsgit");
+const lin = new Lin("jslin");
+lin.init();
+github.init();
