@@ -575,6 +575,11 @@ video {
   margin-right: 3rem;
 }
 
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -680,6 +685,14 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.box-border {
+  box-sizing: border-box;
 }
 
 .block {
@@ -966,6 +979,10 @@ video {
 
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .pb-6 {
@@ -1651,5 +1668,98 @@ nav li:hover {
 @media (min-width: 640px) {
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+}
+
+@media (max-width: 1279px) {
+  .mxl\:max-w-full {
+    max-width: 100%;
+  }
+
+  .mxl\:max-w-none {
+    max-width: none;
+  }
+
+  .mxl\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .mlg\:mx-9 {
+    margin-left: 2.25rem;
+    margin-right: 2.25rem;
+  }
+
+  .mlg\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .mlg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mlg\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
+  .mlg\:mt-44 {
+    margin-top: 11rem;
+  }
+
+  .mlg\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .mlg\:hidden {
+    display: none;
+  }
+
+  .mlg\:max-w-none {
+    max-width: none;
+  }
+
+  .mlg\:justify-center {
+    justify-content: center;
+  }
+
+  .mlg\:gap-1 {
+    gap: 0.25rem;
+  }
+
+  .mlg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .mlg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .mlg\:pr-0 {
+    padding-right: 0px;
+  }
+
+  .mlg\:text-center {
+    text-align: center;
+  }
+
+  .mlg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .mlg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .mlg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
