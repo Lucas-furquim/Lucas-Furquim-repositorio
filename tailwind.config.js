@@ -20,7 +20,7 @@ module.exports = {
         inter: ["Inter"],
       },
       screens: {
-        mxl: { max: "1279px" },
+        mxl: { max: "1200px" },
         // => @media (max-width: 1279px) { ... }
 
         mlg: { max: "1023px" },
