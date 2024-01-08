@@ -26,6 +26,8 @@ module.exports = {
         mlg: { max: "1023px" },
         // => @media (max-width: 1023px) { ... }
 
+        trab: { max: "900px" },
+
         mmd: { max: "767px" },
         // => @media (max-width: 767px) { ... }
 
