@@ -17,7 +17,7 @@
         <img class="w-10" src="Img-portifolio/logo-caneca.svg" alt="">
         <h1 class="text-2xl mlg:text-4xl w-40 font-bold"><a href="./index.html">Lucas</a></h1>
       </div>
-      <nav>
+      <nav class="mmd:hidden">
         <ul class="flex space-x-4 text-xl mlg:text-2xl mlg:gap-1  font-poppins gap-3">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
@@ -25,10 +25,41 @@
           <li><a href="./contato.html">Contato</a></li>
         </ul>
       </nav>
+
+      <nav class="md:hidden">
+        <div>
+          <button class="relative group">
+            <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[60px] h-[60px] transform transition-all bg-sexto ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
+              <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
+                <div class="bg-quarto h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-y-6 delay-100"></div>
+                <div class="bg-quarto h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-y-6 delay-75"></div>
+                <div class="bg-quarto h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-y-6"></div>
+
+                <div class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
+                  <div class="absolute bg-quarto h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"></div>
+                  <div class="absolute bg-quarto h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"></div>
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
+      </nav>
     </div>
+
   </header>
 
-  <main class="mt-32 max-w-6xl mx-auto">
+  <div class="hidden fixed z-20 bg-black bg-opacity-50">
+    <div class="pt-96 text-white text-center text-5xl w-screen h-screen">
+      <ul class="font-arial">
+        <li class="mb-8"><a href="#sobre">Sobre</a></li>
+        <li class="mb-8"><a href="#habilidades">Habilidades</a></li>
+        <li class="mb-8"><a href="#projetos">Projetos</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="mt-20 max-w-6xl mx-auto">
     <div class="flex place-content-between items-center mxl:px-10">
       <div class="text-white w-auto mlg:mt-44 mlg:ml-10  ">
         <p class='text-xl'><img class="inline h-8 mr-2" src="Img-portifolio/mao.png" alt=""> Olá menu nome é</p>
@@ -120,7 +151,7 @@
     </div>
 
     <div id="projetos" class="pb-16 border-b border-borderb ">
-      <h2 class="text-white text-center text-4xl font-bold font-poppins mb-28 mt-20 pt-20 mx-auto">Conheça meus projetos e veja um pouco do meu conhecimento e o trabalho que faço</h2>
+      <h2 class="text-white text-center text-4xl font-bold font-poppins mb-28 mt-20 pt-20 mx-auto mmd:text-3xl mmd:px-16">Conheça meus projetos e veja um pouco do meu conhecimento e o trabalho que faço</h2>
 
       <div class="flex justify-center">
         <img class="mlg:hidden" src="Img-portifolio/site-hoteis.png" alt="">
@@ -155,10 +186,10 @@
       </div>
     </div>
 
-    <footer class="text-white grid grid-cols-3 gap-x-10 mx-auto mt-36 mlg:gap-x-4 mlg:mx-10 mlg:flex mlg:justify-between">
-      <div>
+    <footer class="text-white grid grid-cols-3 gap-x-10 mx-auto mt-36 mlg:gap-x-4 mlg:mx-10 mlg:flex mlg:justify-between mmd:grid mmd:grid-cols-2 mmd:gap-y-8 mmd:justify-items-start">
+      <div class="mmd:col-span-full">
         <h2 class="text-4xl font-bold font-poppins mb-7">Vamos Conversar</h2>
-        <p class="font-arial text-base mb-7 mlg:max-w-xs">Entre em contato e marcamos uma conversa para inicar um novo projeto</p>
+        <p class="font-arial text-base mb-7 mlg:max-w-xs mmd:max-w-none">Entre em contato e marcamos uma conversa para inicar um novo projeto</p>
         <a class="link-a-btn font-semibold text-sm tracking-widest bg-quarto" href="./contato.html">
           <span>Iniciar Projeto<img class="inline ml-3" src="Img-portifolio/arrow-right-thin.svg" alt=""></span>
         </a>
