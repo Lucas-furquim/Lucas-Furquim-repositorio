@@ -34,6 +34,8 @@ module.exports = {
         msm: { max: "639px" },
         // => @media (max-width: 639px) { ... }
 
+        mimg: { max: "550px" },
+
         mxs: { max: "439px" },
       },
     },

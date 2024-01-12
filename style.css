@@ -339,6 +339,81 @@
   }
 }
 
+@media (max-width: 639px) {
+  .box {
+    width: 200px;
+    height: 200px;
+  }
+  .box::before {
+    width: 50px;
+  }
+
+  .boxCss {
+    width: 200px;
+    height: 200px;
+  }
+  .boxCss::before {
+    width: 50px;
+  }
+
+  .boxReact {
+    width: 200px;
+    height: 200px;
+  }
+  .boxReact::before {
+    width: 50px;
+  }
+
+  .boxJs {
+    width: 200px;
+    height: 200px;
+  }
+  .boxJs::before {
+    width: 50px;
+  }
+
+  .boxTai {
+    width: 200px;
+    height: 200px;
+  }
+  .boxTai::before {
+    width: 50px;
+  }
+
+  .boxGit {
+    width: 200px;
+    height: 200px;
+  }
+  .boxGit::before {
+    width: 50px;
+  }
+
+  .boxUi {
+    width: 200px;
+    height: 200px;
+  }
+  .boxUi::before {
+    width: 50px;
+    height: 200%;
+  }
+
+  .boxWor {
+    width: 200px;
+    height: 200px;
+  }
+  .boxWor::before {
+    width: 50px;
+  }
+
+  .boxEle {
+    width: 200px;
+    height: 200px;
+  }
+  .boxEle::before {
+    width: 50px;
+  }
+}
+
 .floating {
   animation-name: floating;
   animation-duration: 3s;
