@@ -534,5 +534,6 @@ nav li:hover {
   top: 0px;
   height: 100%;
   width: 100%;
-  background-image: url("./Img-portifolio/papel-contato.jpg");
+  background-image: url("./Img-portifolio/fundo-contato2.jpg");
+  background-size: cover;
 }
