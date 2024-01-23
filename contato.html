@@ -13,23 +13,54 @@
 
 <body class="papel-de-contato overflow-hidden">
 
-  <header class="fixed -top-1 w-full bg-pricipal shadow-pricipal shadow-xl z-20">
-    <div class="  text-white flex  mx-auto justify-between   w-full
-    max-w-6xl mx-auto pt-5 ">
+  <header class="fixed bg-pricipal shadow-xl shadow-pricipal -top-1 w-full z-20">
+    <div class="text-white flex  mx-auto justify-between   w-full
+    max-w-6xl pt-5 mxl:px-5">
       <div class="flex gap-2">
         <img class="w-10" src="Img-portifolio/logo-caneca.svg" alt="">
-        <h1 class="text-2xl w-40 font-bold"><a href="./index.html">Lucas</a></h1>
+        <h1 class="text-2xl mlg:text-4xl w-40 font-bold"><a href="./index.html">Lucas</a></h1>
       </div>
-      <nav>
-        <ul class="flex space-x-4 text-xl font-poppins gap-3">
+      <nav class="mmd:hidden">
+        <ul class="flex space-x-4 text-xl mlg:text-2xl mlg:gap-1  font-poppins gap-3">
           <li><a href="./index.html">Sobre</a></li>
           <li><a href="./index.html">Habilidades</a></li>
           <li><a href="./index.html">Projetos</a></li>
           <li><a href="./contato.html">Contato</a></li>
         </ul>
       </nav>
+
+      <nav class="md:hidden">
+        <div>
+          <button class="relative group" data-drop>
+            <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[60px] h-[60px] transform transition-all bg-sexto ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
+              <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
+                <div class="bg-quarto h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-y-6 delay-100"></div>
+                <div class="bg-quarto h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-y-6 delay-75"></div>
+                <div class="bg-quarto h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-y-6"></div>
+
+                <div class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
+                  <div class="absolute bg-quarto h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"></div>
+                  <div class="absolute bg-quarto h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"></div>
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
+      </nav>
     </div>
+
   </header>
+
+  <div class="fixed z-20 bg-black bg-opacity-95 hidden" data-drop-tela>
+    <div class="pt-40 text-white text-center text-5xl w-screen h-screen">
+      <ul class="font-arial">
+        <li class="mb-8"><a href="./index.html">Sobre</a></li>
+        <li class="mb-8"><a href="./index.html">Habilidades</a></li>
+        <li class="mb-8"><a href="./index.html">Projetos</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </div>
 
   <main class="text-white font-arial bg-sexto shadow-lg shadow-pricipal max-w-3xl mx-auto rounded-xl mt-40 mb-4">
     <h2 class="text-center text-5xl font-bold font-poppins pt-5">Contato</h2>
@@ -58,7 +89,7 @@
   <div class="bg-black">
     <div class="text-white max-w-6xl mx-auto mt-20 pb-4 pt-4 pl-4 flex justify-between items-center">
       <p class="text-base font-arial mb-2">Feito por Lucas Furquim &copy;</p>
-      <div class="mr-32 flex">
+      <div class="mr-32 flex mmd:grid mmd:grid-cols-2 items-center">
         <a href="https://www.linkedin.com/in/lucas-vinicius-4340981b8/" target="_blank">
           <img class="jslin cursor-pointer" src="Img-portifolio/linkedin.svg" alt="">
         </a>
