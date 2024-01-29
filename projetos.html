@@ -10,36 +10,66 @@
 
 <body class="bg-pricipal">
 
-  <header class="fixed -top-1 w-full bg-pricipal shadow-pricipal shadow-xl z-20">
-    <div class="  text-white flex  mx-auto justify-between   w-full
-    max-w-6xl pt-5">
+  <header class="fixed bg-pricipal shadow-xl shadow-pricipal -top-1 w-full z-20">
+    <div class="text-white flex  mx-auto justify-between   w-full
+    max-w-6xl pt-5 mxl:px-5">
       <div class="flex gap-2">
         <img class="w-10" src="Img-portifolio/logo-caneca.svg" alt="">
-        <h1 class="text-2xl w-40 font-bold"><a href="./index.html">Lucas</a></h1>
+        <h1 class="text-2xl mlg:text-4xl w-40 font-bold"><a href="./index.html">Lucas</a></h1>
       </div>
-      <nav>
-        <ul class="flex space-x-4 text-xl font-poppins gap-3">
-          <li><a href="./index.html">Sobre</a></li>
-          <li><a href="./index.html">Habilidades</a></li>
-          <li><a href="./index.html">Projetos</a></li>
+      <nav class="mmd:hidden">
+        <ul class="flex space-x-4 text-xl mlg:text-2xl mlg:gap-1  font-poppins gap-3">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
           <li><a href="./contato.html">Contato</a></li>
         </ul>
       </nav>
+
+      <nav class="md:hidden">
+        <div>
+          <button class="relative group" data-drop>
+            <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[60px] h-[60px] transform transition-all bg-sexto ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
+              <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
+                <div class="bg-quarto h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-y-6 delay-100"></div>
+                <div class="bg-quarto h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-y-6 delay-75"></div>
+                <div class="bg-quarto h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-y-6"></div>
+
+                <div class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
+                  <div class="absolute bg-quarto h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"></div>
+                  <div class="absolute bg-quarto h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"></div>
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
+      </nav>
     </div>
+
   </header>
 
+  <div class="fixed z-20 bg-black bg-opacity-95 hidden" data-drop-tela>
+    <div class="pt-40 text-white text-center text-5xl w-screen h-screen">
+      <ul class="font-arial">
+        <li class="mb-8"><a href="#sobre">Sobre</a></li>
+        <li class="mb-8"><a href="#habilidades">Habilidades</a></li>
+        <li class="mb-8"><a href="#projetos">Projetos</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </div>
 
   <main class="max-w-6xl mx-auto">
     <div class="text-white">
       <h1 class="text-center text-6xl font-bold font-poppins mb-10 mt-20 pt-20">Projetos</h1>
-      <p class="max-w-xl mx-auto text-center font-arial font-bold">Aqui você poderá ver alguns dos trabalhos que eu desenvolvi. Navegue à vontade e explore os projetos para ver como foram criados, as tecnologias utilizadas e as funcionalidades implementadas.</p>
+      <p class="max-w-xl mx-auto text-center font-arial font-bold mimg:mx-2">Aqui você poderá ver alguns dos trabalhos que eu desenvolvi. Navegue à vontade e explore os projetos para ver como foram criados, as tecnologias utilizadas e as funcionalidades implementadas.</p>
 
       <!-- <div>
         <p>Filtro</p>
       </div> -->
     </div>
 
-    <div class="mt-40 max-w-5xl mx-auto">
+    <div class="mt-40 max-w-5xl mx-auto mlg:mx-5">
 
       <div class="grid-projeto border-t py-20 border-gray-700">
         <img class="" src="Img-portifolio/projeto-bike.png" alt="">
@@ -50,10 +80,10 @@
           </div>
           <p class="max-w-md mb-2">Uma Loja virtual feita atraves de um curso, com aprendizados de gerenciar uma loja com produtos e clientes fazendo envio de formularios e um sistema integrado de relação entre produtos...</p>
           <ul class="flex gap-4 my-7 ">
-            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg">Html</li>
-            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg">Css</li>
-            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg">Javascript</li>
-            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg">Php</li>
+            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg hover:bg-trab hover:cursor-pointer">Html</li>
+            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg hover:bg-trab hover:cursor-pointer">Css</li>
+            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg hover:bg-trab hover:cursor-pointer">Javascript</li>
+            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg hover:bg-trab hover:cursor-pointer">Php</li>
           </ul>
           <P class="mt-8 font-poppins text-lg"><a href="./">Ver Projeto <img class="inline ml-1" src="Img-portifolio/arrow-right-thin.svg" alt=""></a></P>
         </div>
@@ -68,9 +98,9 @@
           </div>
           <p class="max-w-md mb-2">Um site feito para apresentar um Slide demonstrativo e informações de animais na selva, e novos tipos de ferramentas utilizadas...</p>
           <ul class="flex gap-4 my-7 ">
-            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg">Html</li>
-            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg">Css</li>
-            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg">Javascript</li>
+            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg hover:bg-trab hover:cursor-pointer">Html</li>
+            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg hover:bg-trab hover:cursor-pointer">Css</li>
+            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg hover:bg-trab hover:cursor-pointer">Javascript</li>
           </ul>
           <P class="mt-8 font-poppins text-lg"><a href="./">Ver Projeto <img class="inline ml-1" src="Img-portifolio/arrow-right-thin.svg" alt=""></a></P>
         </div>
@@ -85,10 +115,10 @@
           </div>
           <p class="max-w-md mb-2">Uma loja de bicicletas de varios estilos, utilizando o sistema de wordpress e evitando sistemas de repetição, automatizando a maior parte do site...</p>
           <ul class="flex gap-4 my-7 ">
-            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg">Html</li>
-            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg">Javascript</li>
-            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg">Wordpress</li>
-            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg">Php</li>
+            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg hover:bg-trab hover:cursor-pointer">Html</li>
+            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg hover:bg-trab hover:cursor-pointer">Javascript</li>
+            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg hover:bg-trab hover:cursor-pointer">Wordpress</li>
+            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg hover:bg-trab hover:cursor-pointer">Php</li>
           </ul>
           <P class="mt-8 font-poppins text-lg"><a href="./">Ver Projeto <img class="inline ml-1" src="Img-portifolio/arrow-right-thin.svg" alt=""></a></P>
         </div>
@@ -103,8 +133,8 @@
           </div>
           <p class="max-w-md mb-2">Um site totalmente basico utilizando somente a classe Flex para evitar utilização de classes desnecessarias e assim tendo uma redução de codigo para deixar mais limpo...</p>
           <ul class="flex gap-4 my-7 ">
-            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg">Html</li>
-            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg">Css</li>
+            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg hover:bg-trab hover:cursor-pointer">Html</li>
+            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg hover:bg-trab hover:cursor-pointer">Css</li>
           </ul>
           <P class="mt-8 font-poppins text-lg"><a href="./">Ver Projeto <img class="inline ml-1" src="Img-portifolio/arrow-right-thin.svg" alt=""></a></P>
         </div>
@@ -119,8 +149,8 @@
           </div>
           <p class="max-w-md mb-2">Um site feito atraves de um framework css, utilizando o Tailwind para aumentar a velocidade de produção do codigo e deixando mais limpo a tela</p>
           <ul class="flex gap-4 my-7 ">
-            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg">Html</li>
-            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg">Tailwind</li>
+            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg hover:bg-trab hover:cursor-pointer">Html</li>
+            <li class="bg-terceiro font-arial font-semibold tracking-wider py-2 px-2 rounded-lg hover:bg-trab hover:cursor-pointer">Tailwind</li>
           </ul>
           <P class="mt-8 font-poppins text-lg"><a href="./">Ver Projeto <img class="inline ml-1" src="Img-portifolio/arrow-right-thin.svg" alt=""></a></P>
         </div>
@@ -138,7 +168,9 @@
         <a href="https://www.linkedin.com/in/lucas-vinicius-4340981b8/" target="_blank">
           <img class="jslin cursor-pointer" src="Img-portifolio/linkedin.svg" alt="">
         </a>
-        <img class="jsgit cursor-pointer" src="Img-portifolio/github.svg" alt="">
+        <a href="https://github.com/Lucas-furquim">
+          <img class="jsgit cursor-pointer" src="Img-portifolio/github.svg" alt="logo github" target="_blank">
+        </a>
       </div>
     </div>
   </div>

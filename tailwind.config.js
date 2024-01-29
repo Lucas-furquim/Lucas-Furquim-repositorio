@@ -8,6 +8,7 @@ module.exports = {
         secundario: "#0F6BF5",
         terceiro: "#332D9C",
         quarto: "#332B96",
+        trab: "#221d61",
         quinto: "#9A9A9A",
         sexto: "#070D18",
         html: "#E34F26",
@@ -26,7 +27,11 @@ module.exports = {
         mlg: { max: "1023px" },
         // => @media (max-width: 1023px) { ... }
 
+        mtrab: { max: "850px" },
+        // => @media (max-width: 850pxpx) { para a pagina de trabalho }
+
         trab: { max: "900px" },
+        // => @media (max-width: 900pxpx) { a sessão de trabalho na home }
 
         mmd: { max: "767px" },
         // => @media (max-width: 767px) { ... }
