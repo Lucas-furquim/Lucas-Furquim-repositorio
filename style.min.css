@@ -1840,7 +1840,7 @@ video {
 @keyframes writer {
   0%,
   20% {
-    content: "Desenvolvedor Front-end";
+    content: "Desenvolvedor Front";
   }
 
   21%,
@@ -1850,7 +1850,7 @@ video {
 
   41%,
   60% {
-    content: "Desenvolvedor Front-end";
+    content: "Desenvolvedor Front";
   }
 
   61%,
@@ -1860,7 +1860,7 @@ video {
 
   81%,
   100% {
-    content: "Desenvolvedor Front-end";
+    content: "Desenvolvedor Front";
   }
 }
 

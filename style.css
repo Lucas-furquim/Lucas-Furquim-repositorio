@@ -513,7 +513,7 @@
 @keyframes writer {
   0%,
   20% {
-    content: "Desenvolvedor Front-end";
+    content: "Desenvolvedor Front";
   }
   21%,
   40% {
@@ -521,7 +521,7 @@
   }
   41%,
   60% {
-    content: "Desenvolvedor Front-end";
+    content: "Desenvolvedor Front";
   }
   61%,
   80% {
@@ -529,7 +529,7 @@
   }
   81%,
   100% {
-    content: "Desenvolvedor Front-end";
+    content: "Desenvolvedor Front";
   }
 }
 
