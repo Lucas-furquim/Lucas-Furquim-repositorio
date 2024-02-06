@@ -703,6 +703,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1068,6 +1072,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -1110,6 +1119,14 @@ video {
 
 .pt-7 {
   padding-top: 1.75rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .text-center {
@@ -1674,8 +1691,8 @@ video {
 
 @media (max-width: 639px) {
   .box {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 
   .box::before {
@@ -1683,8 +1700,8 @@ video {
   }
 
   .boxCss {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 
   .boxCss::before {
@@ -1692,8 +1709,8 @@ video {
   }
 
   .boxReact {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 
   .boxReact::before {
@@ -1701,8 +1718,8 @@ video {
   }
 
   .boxJs {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 
   .boxJs::before {
@@ -1710,8 +1727,8 @@ video {
   }
 
   .boxTai {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 
   .boxTai::before {
@@ -1719,8 +1736,8 @@ video {
   }
 
   .boxGit {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 
   .boxGit::before {
@@ -1728,8 +1745,8 @@ video {
   }
 
   .boxUi {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 
   .boxUi::before {
@@ -1738,8 +1755,8 @@ video {
   }
 
   .boxWor {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 
   .boxWor::before {
@@ -1747,8 +1764,8 @@ video {
   }
 
   .boxEle {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 
   .boxEle::before {
@@ -2171,6 +2188,13 @@ nav li:hover {
 
   .mmd\:tracking-wider {
     letter-spacing: 0.05em;
+  }
+}
+
+@media (max-width: 639px) {
+  .msm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 

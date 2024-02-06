@@ -359,56 +359,56 @@
 
 @media (max-width: 639px) {
   .box {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .box::before {
     width: 50px;
   }
 
   .boxCss {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .boxCss::before {
     width: 50px;
   }
 
   .boxReact {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .boxReact::before {
     width: 50px;
   }
 
   .boxJs {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .boxJs::before {
     width: 50px;
   }
 
   .boxTai {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .boxTai::before {
     width: 50px;
   }
 
   .boxGit {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .boxGit::before {
     width: 50px;
   }
 
   .boxUi {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .boxUi::before {
     width: 50px;
@@ -416,16 +416,16 @@
   }
 
   .boxWor {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .boxWor::before {
     width: 50px;
   }
 
   .boxEle {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .boxEle::before {
     width: 50px;
