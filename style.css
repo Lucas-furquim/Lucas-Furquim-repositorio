@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* TEXT CONHECIMENTOS  */
+
+.conhecimentosHover {
+  color: rgba(255, 255, 255, 0);
+  transition: all 0.2s;
+}
+
+.conhecimentosHover:hover {
+  background-color: rgba(0, 0, 0, 0.774);
+  color: rgb(255, 255, 255);
+}
+
 /* projetos page */
 .grid-projeto {
   display: grid;
