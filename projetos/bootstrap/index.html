@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bootstrap</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <style>
+    .fundoazul {
+      background-color: #046;
+    }
+
+    .navhover {
+      color: white;
+    }
+
+    .navhover:hover {
+      color: #aaa;
+    }
+
+    .clicar {
+      background-color: #0d6efd;
+      ;
+      padding: 5px;
+      color: rgb(255, 255, 255);
+      border-radius: 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header class="container-fluid bg-primary p-0 ">
+    <div class="container bg-primary">
+      <div class="row align-items-center justify-content-around ">
+        <img src="img/logo.svg" alt="" class='col ' style="max-width: 350px;">
+        <h1 class="text-white fs-2 col w-auto ms-5 " style="max-width: 500px;">Modelo de site Bootstrap</h1>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-xxl fundoazul text-white">
+      <div class="container">
+        <div class="navbar-nav ">
+          <a class="nav-link fw-medium  navhover" href="#">Home</a>
+          <a class="nav-link fw-medium  navhover" href="#">Cursos</a>
+          <a class="nav-link fw-medium  navhover" href="#">Arquivos</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="container mt-5 px-5">
+
+      <div class="row">
+
+        <div class="col-8   ">
+
+          <div class="p-2 rounded" style='background-color: #f7f7f7;''>
+            <h2>Os Fundamentos das Finanças Pessoais</h2>
+            <p class="fw-bolder fs-5">Como Gerir Seu Dinheiro com Sabedoria</p>
+            <p class="fs-5">Guardar dinheiro de maneira eficiente é uma habilidade que pode ser desenvolvida através da prática de princípios simples, mas poderosos. A inteligência financeira não se trata apenas de quanto você ganha, mas de como você administra e utiliza esse dinheiro para garantir estabilidade e crescimento futuros. Aqui estão os elementos essenciais para desenvolver essa inteligência financeira:</p>
+          </div>
+
+
+          <div class="p-2 mt-4  rounded" style=' background-color: #f7f7f7;'>
+            <h2>Os Fundamentos das Finanças Pessoais</h2>
+            <p class="fw-bolder fs-5"></p>
+            <p class="fs-5">Definir metas específicas, mensuráveis e com prazos definidos é crucial. Metas como construir um fundo de emergência, quitar dívidas ou economizar para a aposentadoria dão propósito ao seu esforço de poupança e mantêm você motivado. Automatize suas economias transferindo uma parte de sua renda automaticamente para uma conta poupança ou investimento. Isso garante que você esteja poupando consistentemente, sem a tentação de gastar o dinheiro antes de guardá-lo. Ter um fundo de emergência é essencial para lidar com despesas inesperadas sem comprometer suas finanças. Um valor equivalente a três a seis meses de despesas essenciais é geralmente recomendado.
+
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-4">
+
+          <div>
+            <h2 class="fs-2">Sobre</h2>
+            <p class="fs-6 fw-bold ">Sobre as finanças</p>
+            <p>Inteligência financeira é a habilidade de administrar e utilizar o dinheiro de maneira eficaz para alcançar estabilidade e crescimento financeiro. Envolve o conhecimento e a aplicação de conceitos como orçamento, poupança, investimento e controle de dívidas.</p>
+
+            <h2 class="fs-2">Alguns Topicos</h2>
+
+            <div class="list-group">
+              <p href="#" class="fs-5 my-3 text-primary" style="cursor: pointer;">Planejamento Financeiro Pessoal</p>
+              <p href="#" class="fs-5 my-3 text-primary " style="cursor: pointer;">Estratégias de Investimento para Iniciantes</p>
+              <p href="#" class="fs-5 my-3 text-primary " style="cursor: pointer;">Como Criar e Gerenciar um Orçamento</p>
+              <p href="#" class="fs-5 my-3 text-primary " style="cursor: pointer;">Dicas para Economizar Dinheiro</p>
+              <p href="#" class="fs-5 my-3 text-primary " style="cursor: pointer;">Fundos de Emergência: Por que</p>
+              <p href="#" class="fs-5 my-3 text-primary " style="cursor: pointer;">Gestão de Dívidas: Como Sair do Vermelho</p>
+              <p href="#" class="fs-5 my-3 text-primary " style="cursor: pointer;">Planejamento para a Aposentadoria</p>
+              <p href="#" class="fs-5 my-3 text-primary " style="cursor: pointer;">Educação Financeira para Jovens</p>
+              <p href="#" class="fs-5 my-3 text-primary " style="cursor: pointer;">Os Benefícios e Riscos dos Cartões</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="bg-body-tertiary text-center text-lg-start">
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.212);">
+      © 2020 Copyright:
+      <a class="text-body" href="https://furquim-dev.netlify.app/">Furquim Dev</a>
+    </div>
+  </footer>
+
+
+  <script>
+
+    const li = document.querySelectorAll('.list-group p');
+
+    function ativa(index) {
+      li.forEach((item) => {
+        item.classList.remove('clicar');
+      });
+
+      li[index].classList.add('clicar');
+
+      li.forEach((item) => {
+        if (item.classList.contains('clicar')) {
+          item.classList.remove('text-primary');
+        } else {
+          item.classList.add('text-primary');
+        }
+      })
+    }
+    ativa(0);
+
+
+    li.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        ativa(index);
+      });
+    });
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
