@@ -41,6 +41,8 @@ module.exports = {
 
         mimg: { max: "550px" },
 
+        mximg: { max: "490px" },
+
         mxs: { max: "439px" },
       },
     },

@@ -2245,6 +2245,21 @@ nav li:hover {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
+
+  .mimg\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  .mimg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .mximg\:hidden {
+    display: none;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
