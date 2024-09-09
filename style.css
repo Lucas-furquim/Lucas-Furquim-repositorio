@@ -82,7 +82,7 @@
 
 .link-a .liquid::after,
 .link-a .liquid::before {
-  content: "";
+  content: '';
   width: 200%;
   height: 200%;
   position: absolute;
@@ -129,7 +129,7 @@
   overflow: hidden;
 }
 .box::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 200%;
@@ -137,7 +137,7 @@
   animation: snake 3s linear infinite;
 }
 .box::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #070d18;
   inset: 5px;
@@ -156,7 +156,7 @@
   overflow: hidden;
 }
 .boxCss::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 200%;
@@ -164,7 +164,7 @@
   animation: snake 3s linear infinite;
 }
 .boxCss::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #070d18;
   inset: 5px;
@@ -183,7 +183,7 @@
   overflow: hidden;
 }
 .boxReact::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 200%;
@@ -191,7 +191,7 @@
   animation: snake 3s linear infinite;
 }
 .boxReact::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #070d18;
   inset: 5px;
@@ -210,7 +210,7 @@
   overflow: hidden;
 }
 .boxJs::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 200%;
@@ -218,7 +218,7 @@
   animation: snake 3s linear infinite;
 }
 .boxJs::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #070d18;
   inset: 5px;
@@ -237,7 +237,7 @@
   overflow: hidden;
 }
 .boxTai::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 200%;
@@ -245,7 +245,7 @@
   animation: snake 3s linear infinite;
 }
 .boxTai::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #070d18;
   inset: 5px;
@@ -264,7 +264,7 @@
   overflow: hidden;
 }
 .boxGit::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 200%;
@@ -272,7 +272,7 @@
   animation: snake 3s linear infinite;
 }
 .boxGit::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #070d18;
   inset: 5px;
@@ -291,7 +291,7 @@
   overflow: hidden;
 }
 .boxUi::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 200%;
@@ -299,7 +299,7 @@
   animation: snake 3s linear infinite;
 }
 .boxUi::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #070d18;
   inset: 5px;
@@ -318,7 +318,7 @@
   overflow: hidden;
 }
 .boxWor::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 200%;
@@ -326,7 +326,7 @@
   animation: snake 3s linear infinite;
 }
 .boxWor::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #070d18;
   inset: 5px;
@@ -345,7 +345,7 @@
   overflow: hidden;
 }
 .boxEle::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 200%;
@@ -353,7 +353,7 @@
   animation: snake 3s linear infinite;
 }
 .boxEle::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #070d18;
   inset: 5px;
@@ -468,7 +468,7 @@
 /* efeito digitação */
 
 .texto-animado span::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 100%;
   border-left: 2px solid white;
@@ -511,7 +511,7 @@
 }
 
 .texto-animado span::before {
-  content: "";
+  content: '';
   animation: writer 20s infinite;
   padding-right: 10px;
 }
@@ -525,23 +525,23 @@
 @keyframes writer {
   0%,
   20% {
-    content: "Desenvolvedor Front";
+    content: 'Desenvolvedor Front';
   }
   21%,
   40% {
-    content: "Sorocaba/SP";
+    content: 'Sorocaba/SP';
   }
   41%,
   60% {
-    content: "Desenvolvedor Front";
+    content: 'Desenvolvedor Front';
   }
   61%,
   80% {
-    content: "Sorocaba/SP";
+    content: 'Sorocaba/SP';
   }
   81%,
   100% {
-    content: "Desenvolvedor Front";
+    content: 'Desenvolvedor Front';
   }
 }
 
@@ -564,6 +564,6 @@ nav li:hover {
   top: 0px;
   height: 100%;
   width: 100%;
-  background-image: url("./Img-portifolio/fundo-contato2.jpg");
+  background-image: url('./Img-portifolio/fundo-contato2.jpg');
   background-size: cover;
 }
