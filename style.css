@@ -4,6 +4,11 @@
 
 /* TEXT CONHECIMENTOS  */
 
+.aside {
+  margin-left: 500px;
+  background-color: rgb(15, 24, 75);
+}
+
 .conhecimentosHover {
   color: rgba(255, 255, 255, 0);
   transition: all 0.2s;
