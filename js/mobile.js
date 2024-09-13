@@ -5,14 +5,14 @@ export default class Lin {
   }
 
   mostra() {
-    this.btn.addEventListener("click", (e) => {
-      this.tela.classList.toggle("hidden");
+    this.btn.addEventListener('click', (e) => {
+      this.tela.classList.toggle('hidden');
     });
   }
 
   telas() {
-    this.tela.addEventListener("click", () => {
-      this.tela.classList.add("hidden");
+    this.tela.addEventListener('click', () => {
+      this.tela.classList.add('hidden');
     });
   }
 

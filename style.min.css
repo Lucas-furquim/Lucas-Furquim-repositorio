@@ -580,6 +580,10 @@ video {
   left: 24rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -598,6 +602,10 @@ video {
 
 .z-20 {
   z-index: 20;
+}
+
+.z-30 {
+  z-index: 30;
 }
 
 .mx-12 {
@@ -622,10 +630,6 @@ video {
 
 .mb-10 {
   margin-bottom: 2.5rem;
-}
-
-.mb-12 {
-  margin-bottom: 3rem;
 }
 
 .mb-2 {
@@ -772,6 +776,10 @@ video {
   height: 60px;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -798,6 +806,10 @@ video {
 
 .w-96 {
   width: 24rem;
+}
+
+.w-\[200px\] {
+  width: 200px;
 }
 
 .w-\[20px\] {
@@ -948,6 +960,12 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-12 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
 }
 
 .space-y-8 > :not([hidden]) ~ :not([hidden]) {
@@ -1140,16 +1158,20 @@ video {
   padding-left: 1.5rem;
 }
 
-.pr-16 {
-  padding-right: 4rem;
-}
-
 .pr-20 {
   padding-right: 5rem;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .pt-1 {
   padding-top: 0.25rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .pt-20 {
@@ -1362,8 +1384,17 @@ video {
 
 /* TEXT CONHECIMENTOS  */
 
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(100px);
+  }
+}
+
+.fixAside {
+  animation: slideInFromLeft 0.5s forwards;
+}
+
 .aside {
-  margin-left: 500px;
   background-color: rgb(15, 24, 75);
 }
 
@@ -1964,7 +1995,7 @@ nav li:hover {
   top: 0px;
   height: 100%;
   width: 100%;
-  background-image: url('./Img-portifolio/fundo-contato2.jpg');
+  background-image: url('./Img-portifolio/fundo-contato.jpg');
   background-size: cover;
 }
 
@@ -1975,6 +2006,10 @@ nav li:hover {
 .hover\:bg-trab:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(34 29 97 / var(--tw-bg-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 .hover\:ring-8:hover {

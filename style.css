@@ -3,9 +3,17 @@
 @tailwind utilities;
 
 /* TEXT CONHECIMENTOS  */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(100px);
+  }
+}
+
+.fixAside {
+  animation: slideInFromLeft 0.5s forwards;
+}
 
 .aside {
-  margin-left: 500px;
   background-color: rgb(15, 24, 75);
 }
 
@@ -569,6 +577,6 @@ nav li:hover {
   top: 0px;
   height: 100%;
   width: 100%;
-  background-image: url('./Img-portifolio/fundo-contato2.jpg');
+  background-image: url('./Img-portifolio/fundo-contato.jpg');
   background-size: cover;
 }
