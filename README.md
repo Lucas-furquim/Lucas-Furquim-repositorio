@@ -27,13 +27,11 @@ Para clonar e executar este projeto localmente, siga estas etapas:
     ```
 3. Abra o arquivo `index.html` em um navegador web para visualizar o site.
 
-4. Para conseguir utilizar o Framework sem problemas
-
-  vá até o diretorio do site via git, e utilize o comando abaixo.
+4. Para conseguir utilizar o Framework sem problemas, vá até o diretorio do site via git, e utilize o comando abaixo:
     ```bash
     npm run dev 
     ```
-    Dessa forma o Framework ira atualizar o arquivo style.min.css para o codigo do style.css ser importado automaticamente 
+    Dessa forma o Framework ira atualizar o arquivo style.min.css para o codigo do style.css ser importado automaticamente.
 
 ## Estrutura do Projeto
 
