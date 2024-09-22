@@ -570,13 +570,3 @@ nav li:hover {
 }
 
 /* papel de contato  */
-
-.papel-de-contato {
-  z-index: -2;
-  position: absolute;
-  top: 0px;
-  height: 100%;
-  width: 100%;
-  background-image: url('./Img-portifolio/fundo-contato.jpg');
-  background-size: cover;
-}
