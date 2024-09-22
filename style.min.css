@@ -598,6 +598,10 @@ video {
   top: 0px;
 }
 
+.top-1 {
+  top: 0.25rem;
+}
+
 .top-2\.5 {
   top: 0.625rem;
 }
@@ -1398,6 +1402,15 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.headerFixed {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  padding: 0px 10px;
+  width: 100%;
+  z-index: 999;
 }
 
 /* TEXT CONHECIMENTOS  */
@@ -2338,8 +2351,8 @@ nav li:hover {
     padding-right: 0.25rem;
   }
 
-  .mximg\:pl-6 {
-    padding-left: 1.5rem;
+  .mximg\:pl-10 {
+    padding-left: 2.5rem;
   }
 }
 

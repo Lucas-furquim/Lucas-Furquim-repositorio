@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.headerFixed {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  padding: 0px 10px;
+  width: 100%;
+  z-index: 999;
+}
+
 /* TEXT CONHECIMENTOS  */
 @keyframes slideInFromLeft {
   from {
