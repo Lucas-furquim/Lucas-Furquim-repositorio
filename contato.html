@@ -65,25 +65,32 @@
   </header>
 
 
-  <main class="max-w-6xl mx-auto">
+  <main class="max-w-3xl mx-auto">
     <div class="pt-32 mr-12">
       <h2 class="text-white text-4xl font-semibold text-center">Como Mandar seu projeto?</h2>
       <p class="text-white  text-base text-center ">(Formulário no final da página)</p>
 
       <div class="mt-32 ml-14 max-w-5xl text-center">
         <h3 class="text-white text-xl font-semibold">Como mandar a solicitação?</h3>
-        <p class="text-white text-base mt-6">No primeiro campo escreve o nome e sobrenome, logo coloque seu melhor email, e por ultimo tente escrever de maneira mais clara o seu projeto e nos proximos dias marcamos uma reunião para falar mais detalhes dentro do projeto.</p>
+        <p class="text-white text-base mt-6"> No primeiro campo, insira seu nome e sobrenome completos.
+          No segundo, forneça o seu melhor e-mail para que possamos entrar em contato rapidamente.
+          Por último, descreva de forma clara e objetiva o seu projeto, incluindo detalhes como o objetivo, funcionalidades desejadas e público-alvo.
+          Assim que recebermos sua solicitação, entraremos em contato nos próximos dias para agendar uma reunião e alinhar todos os detalhes necessários para o desenvolvimento do seu projeto.</p>
       </div>
 
       <div class="mt-16 ml-14 max-w-5xl text-center">
         <h3 class="text-white text-xl font-semibold">Como são as proximas etapas?</h3>
-        <p class="text-white text-base mt-6">Os sites/Projetos geralmente é feito o Desing de todo o site, assim que o desing for aprovado começamos a construir o site para a entrega.</p>
+        <p class="text-white text-base mt-6">O desenvolvimento do site ou projeto segue um processo estruturado:
+          Primeiro, criamos o design completo do site, considerando as preferências e necessidades do cliente.
+          Após a aprovação do design, iniciamos a etapa de desenvolvimento, onde transformamos o design em um site funcional e responsivo.
+          Por fim, realizamos os ajustes finais e preparamos o site para entrega, garantindo que tudo esteja de acordo com as expectativas.</p>
       </div>
 
 
       <div class="mt-16 ml-14 max-w-5xl text-center">
         <h3 class="text-white text-xl font-semibold">Quanto tempo leva?</h3>
-        <p class="text-white text-base mt-6">O desing do site pode variar bastante o tempo entre 2 dias até 1 semana, depende muito do que você ira pedir, quantas paginas vai ter e os detalhes, assim que aprovado o desing a produção do site geralmente leva em torno de 5 horas a 1 dia (Levando em cosideração um site pequeno).</p>
+        <p class="text-white text-base mt-6">O prazo para o desenvolvimento do design do site pode variar bastante, dependendo das decisões e alterações solicitadas pelo cliente. Em média, o processo leva cerca de uma semana, considerando fatores como o número de páginas e a complexidade dos detalhes.
+          Após a aprovação do design, a produção do site costuma ser concluída em 1 semana, especialmente no caso de sites pequenos.</p>
       </div>
 
     </div>
@@ -95,15 +102,15 @@
         <form name="contact" method="POST" class="space-y-8" netlify>
           <div class="font-arial">
             <label for="nome" class="block mb-2 text-sm font-medium">Seu nome</label>
-            <input type="text" id="nome" name="nome" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Nome" required>
+            <input type="text" id="nome" name="nome" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required>
           </div>
           <div>
             <label for="subject" class="block mb-2 text-sm font-medium ">Email</label>
-            <input type="email" id="subject" name="email" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Seu melhor email" required>
+            <input type="email" id="subject" name="email" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required>
           </div>
           <div class="sm:col-span-2">
             <label for="message" class="block mb-2 text-sm font-medium ">Sua mensagem</label>
-            <textarea id="message" name="texto" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Deixa uma ideia do seu projeto" required></textarea>
+            <textarea id="message" name="texto" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required></textarea>
           </div>
           <button type="submit" class="link-a-btn font-semibold text-sm tracking-widest bg-quarto" href="./contato.html">
             <span>Enviar</span>
